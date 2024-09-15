@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = "This is the backend service of the Financial Analysis Platform."
+authors = ["jinjin.tao <franciatao447@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+flask = "^3.0.3"
+requests = "^2.32.3"
+pandas = "^2.2.2"
+click = "^8.1.7"
+flask-cors = "^5.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+flask-run = "run:run_server"
+flask-init-db = "run:init_db"
+flask-migrate-db = "run:migrate_db"

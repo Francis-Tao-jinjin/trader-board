@@ -1,0 +1,2 @@
+class APILimitReachedException(Exception):
+    pass
