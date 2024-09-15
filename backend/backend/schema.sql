@@ -1,6 +1,9 @@
-DROP TABLE IF EXISTS stocks;
+DROP TABLE IF EXISTS stocks_daily;
+DROP TABLE IF EXISTS stocks_hourly;
+DROP TABLE IF EXISTS stocks_info;
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS user_stocks;
+DROP TABLE IF EXISTS user_setting;
 
 CREATE TABLE stocks_daily (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
